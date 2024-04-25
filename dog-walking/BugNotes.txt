@@ -1,0 +1,43 @@
+                                CSS (3 bugs)
+
+1. @import "detail.css";  --> not referencing the proper file name: "details.css" (missing 's')
+2. display: fle;  --> syntax error: should be 'display: flex' on line 2 of details.css
+3. 
+
+
+                                main.js (1 bug)
+
+1. <section class="detail--column list details__cities">
+        <h2>Pets</h2>
+    </section>     --> pets module not being called to print return value; 
+                       also, class names of pets and walkers should be changed to details__pets and details__walkers (maybe?)
+
+
+                                CityList.js (3 bugs)
+
+1. import { getWalkers } from "./database.js"
+    const walkers = getWalker() --> Not calling on the proper function name (syntax error - should be getWalkers() on line 3)
+2. for (const walker of walkers) {
+        citiesHTML += `<li>${currentWalker.city}</li>`}  --> currentWalker is not referenced anywhere (syntax error - should be walker.city on line 10 since 
+                                                             variable was reassigned inside of the loop.)
+3.      let citiesHTML = "<ol>"  
+        /
+        citiesHTML += "</ol>"    --> NEEDS TO BE AN UNORDERED LIST!!! (change tags to <ul></ul>)
+
+
+                                Walkers.js (3 bugs)
+
+1. import { getWalkers } from "./database.js"
+    const walkers = getWalker()  --> Never reads this (syntax error - should be { getWalkers } on line 1)
+2. walkerHTML += `<li>${walker.fullName}</li>`   --> syntax error: .fullName IS NOT a key name in the walkers object in database. Needs to be walker.name
+3. LINE 15 NEEDS TO HAVE A RETURN!!!  --> return walkerHTML  (before closing curly brace)
+
+
+                                Assignments.js (3 bugs)
+
+1. const currentPetWalker = findPetWalker(currentPet, walkers)   --> syntax error: 'findPetWalker' should be 'findWalker', referencing function variable from line 9
+2. const findWalker = (pet, allWalker) => {-}   --> syntax error: allWalker needs to bo changed to allWalkers on line 12 so the later referencing becomes valid
+3. assignmentHTML =     --> line 27 is creating only one value of this variable and returning that instead of adding to the variable with each iteration through the loop.
+                            This causes only the last loop through to be returned, as it is the last time the variable is redefined.
+                            Needs to be assignmentHTML += (plus equals)
+
