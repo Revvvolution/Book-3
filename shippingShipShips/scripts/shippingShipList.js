@@ -7,7 +7,10 @@ export const ShippingShipList = () => {
     let shippingShipHTML = "<ul>"
 
     for (const ship of shippingShips) {
-        shippingShipHTML += `<li>${ship.name}</li>`
+        shippingShipHTML += `<li data-id="${ship.id}"
+                                 data-type="shippingShip">
+                                ${ship.name}
+                                </li>`
     }
 
     shippingShipHTML += "</ul>"

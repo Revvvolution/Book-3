@@ -7,26 +7,91 @@ const database = {
     ],
 
     haulers: [
-        { id: 1, name: "Pioneering Spirit" },
-        { id: 2, name: "Boaty McBoatface" },
-        { id: 3, name: "Seawise Giant" },
-        { id: 4, name: "Bubba Gump" },
-        { id: 5, name: "Hauly Jolly" },
-        { id: 6, name: "Haul O'Ween" },
-        { id: 7, name: "Holla Haulaaah" }
+        { 
+            id: 1, 
+            name: "Pioneering Spirit",
+            dockId: 4
+        },
+        { 
+            id: 2, 
+            name: "Boaty McBoatface",
+            dockId: 1
+        },
+        { 
+            id: 3, 
+            name: "Seawise Giant",
+            dockId: 1
+        },
+        { id: 4, 
+            name: "Bubba Gump",
+            dockId: 2
+        },
+        { id: 5, 
+            name: "Hauly Jolly",
+            dockId: 3
+        },
+        { id: 6,
+             name: "Haul O'Ween",
+             dockId: 1
+            },
+        { id: 7, 
+            name: "Holla Haulaaah",
+            dockId: 2
+        }
     ],
 
     shippingShips: [
-        { id: 1, name: "Esso Atlantic" },
-        { id: 2, name: "Prairial" },
-        { id: 3, name: "Palais Royal" },
-        { id: 4, name: "Rivoli" },
-        { id: 5, name: "Champs Élysée" },
-        { id: 6, name: "Ever Ace" },
-        { id: 7, name: "Nissei Maru" },
-        { id: 8, name: "MSC Gülsün" },
-        { id: 9, name: "HMM Rotterdam" },
-        { id: 10, name: "CMA CGM Trocadero" }
+        { 
+            id: 1, 
+            name: "Esso Atlantic",
+            haulerId: 5
+
+         },
+        { 
+            id: 2, 
+            name: "Prairial",
+            haulerId: 4
+         },
+        { 
+            id: 3, 
+            name: "Palais Royal",
+            haulerId: 4
+         },
+        { 
+            id: 4, 
+            name: "Rivoli",
+            haulerId: 7
+         },
+        { 
+            id: 5, 
+            name: "Champs Élysée",
+            haulerId: 2
+         },
+        { 
+            id: 6, 
+            name: "Ever Ace",
+            haulerId: 3
+         },
+        { 
+            id: 7, 
+            name: "Nissei Maru",
+            haulerId: 6
+         },
+        { 
+            id: 8, 
+            name: "MSC Gülsün",
+            haulerId: 1
+         },
+        { 
+            id: 9, 
+            name: "HMM Rotterdam",
+            haulerId: 6
+         },
+        { 
+            id: 10,
+             name: "CMA CGM Trocadero",
+             haulerId: 3
+        }
     ]
 }
 
