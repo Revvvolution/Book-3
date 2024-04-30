@@ -21,3 +21,10 @@
     font-size: 1.5rem; 
 }
 
+.listFont {
+    font-size: 1rem;
+}
+
+.orders {
+    padding-top: 2em;
+}
