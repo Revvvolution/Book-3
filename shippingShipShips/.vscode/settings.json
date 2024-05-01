@@ -16,5 +16,6 @@
         "Rivoli",
         "Seawise",
         "Trocadero"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
