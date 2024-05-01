@@ -1,0 +1,42 @@
+@import "details.css";
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+/*Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #cacaca;
+    text-shadow: 3px 3px #7c0000;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+h1 {
+	font-family: "Patua One", serif;
+	letter-spacing: 2px;
+	font-size: 40px;
+	padding-left: 10%;
+    
+}
+
+#pageTitle {
+    text-align: center;
+    font-size: 50px;
+}
+
+body {
+    background-image: url("/images/tourbackground_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
